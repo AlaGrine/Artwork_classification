@@ -31,7 +31,7 @@ You can find the app [here](https://huggingface.co/spaces/AlaGrine/Artwork_class
 
 This project requires Python 3 and the following Python libraries installed:
 
-`torch` ,`torchvision`, `torchinfo`, `torchmetrics`, `mlxtend`, `pandas`, `numpy`, `sklearn`, `matplotlib`, `wget`, `tarfile` and `gradio`
+`torch` ,`torchvision`, `torchinfo`, `torchmetrics`, `mlxtend`, `pandas`, `numpy`, `sklearn`, `matplotlib`, `wget`, `tarfile`, `gradio`
 
 ## File Descriptions <a name="file_descriptions"></a>
 
