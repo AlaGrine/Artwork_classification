@@ -1,0 +1,2 @@
+model_name,test_loss,test_acc,number_of_parameters,model_size (MB),avg_prediction_time
+ViT_B16,1.181,59.515,85806346,327.4,0.2385

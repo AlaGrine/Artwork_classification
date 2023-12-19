@@ -1,0 +1,4 @@
+model_name,test_loss,test_acc,number_of_parameters,model_size (MB),avg_prediction_time
+TinyVGG,2.167,21.925,316620,1.2,0.01
+EfficientNet_B2,0.953,67.432,7715084,29.9,0.084
+ViT_B16,1.181,59.515,85806346,327.4,0.2385
