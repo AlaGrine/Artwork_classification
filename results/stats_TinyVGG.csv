@@ -1,0 +1,2 @@
+model_name,test_loss,test_acc,number_of_parameters,model_size (MB),avg_prediction_time
+TinyVGG,1.924,30.791,316620,1.2,0.0097

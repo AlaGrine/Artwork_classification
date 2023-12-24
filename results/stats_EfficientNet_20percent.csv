@@ -1,2 +1,2 @@
 model_name,test_loss,test_acc,number_of_parameters,model_size (MB),avg_prediction_time
-EfficientNet_B2,1.476,46.28,7715084,29.9,0.0764
+EfficientNet_B2,1.461,48.363,7715084,29.9,0.0787
