@@ -14,7 +14,8 @@
 4. [Modelling](#modelling)
 5. [Results](#results)
 6. [Deploy a Gradio demo to HuggingFace Spaces](#gradio_demo)
-7. [Acknowledgements](#ack)
+7. [Blog post](#blog_post)
+8. [Acknowledgements](#ack)
 
 ## Project Overview <a name="overview"></a>
 
@@ -87,6 +88,10 @@ Then, follow the standard git workflow:
 6.  `git add .`
 7.  `git commit -m "first commit"`
 8.  `git push`
+
+## Blog post <a name="blog_post"></a>
+
+I wrote a blog post about this project. You can find it [here](https://medium.com/@alaeddine.grine/artwork-classification-in-pytorch-b4f3395b877e).
 
 ## Acknowledgements <a name="ack"></a>
 
