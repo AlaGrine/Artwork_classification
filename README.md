@@ -14,7 +14,7 @@
 4. [Modelling](#modelling)
 5. [Results](#results)
 6. [Deploy a Gradio demo to HuggingFace Spaces](#gradio_demo)
-7. [Acknowledgements](#Acknowledgements)
+7. [Acknowledgements](#ack)
 
 ## Project Overview <a name="overview"></a>
 
@@ -84,6 +84,6 @@ Then, follow the standard git workflow:
 5.  `git commit -m "first commit"`
 6.  `git push`
 
-## Acknowledgements <a name="Acknowledgements"></a>
+## Acknowledgements <a name="ack"></a>
 
 Credit must be given to the authors of the [artbench](https://github.com/liaopeiyuan/artbench) dataset.
