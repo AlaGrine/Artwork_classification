@@ -1,6 +1,6 @@
 # Artwork classification with PyTorch
 
-## Image classification in PyTorch using convolutional and transformer based models
+## Image classification in PyTorch using Convolutional and Transformer models
 
 <div align="center">
   <img src="https://github.com/AlaGrine/Artwork_classification_in_PyTorch/blob/main/results/fig_Artbench.png" >
@@ -21,6 +21,8 @@
 The aim of this project is to classify artworks using the [artbench](https://github.com/liaopeiyuan/artbench) dataset. The dataset includes 60,000 images of artworks from 10 different artistic styles, including paintings, murals, and sculptures from the 14th to the 21st century. Each style has 5,000 training images and 1,000 test images.
 
 I used PyTorch to create convolutional and transformer-based models. Specifically, I leveraged and fine-tunde the pre-trained [EfficientNet_B2](https://pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_b2.html#torchvision.models.efficientnet_b2)-B2 and [ViT_B16](https://pytorch.org/vision/stable/models/generated/torchvision.models.vit_b_16.html?highlight=vit#torchvision.models.vit_b_16) models.
+
+I replicated the [ViT paper](https://arxiv.org/abs/2010.11929) to enhance comprehension of the Transformer architecture.
 
 To speed up model training, I used two free Kaggle GPU T4 accelerators.
 
@@ -76,13 +78,15 @@ To deploy the [Gradio](https://www.gradio.app/) demo to [HuggingFace Spaces](htt
 
 Then, follow the standard git workflow:
 
-3.  Clone the repo locally: `git clone https://huggingface.co/spaces/[USERNAME]/[SPACE_NAME]` 4. Copy the contents of `gradio_demo` folder to the `clonded repo` folder. 5. Passwords are no longer accepted as a way to authenticate command-line Git operations. You need to use a personal access token as explained [here](https://huggingface.co/blog/password-git-deprecation).
+3.  Clone the repo locally: `git clone https://huggingface.co/spaces/[USERNAME]/[SPACE_NAME]`
+4.  Copy the contents of `gradio_demo` folder to the `clonded repo` folder.
+5.  Passwords are no longer accepted as a way to authenticate command-line Git operations. You need to use a personal access token as explained [here](https://huggingface.co/blog/password-git-deprecation).
 
             `git remote set-url origin https://[USERNAME]:[TOKEN]@huggingface.co/spaces/[USERNAME]/[SPACE_NAME]`
 
-4.  `git add .`
-5.  `git commit -m "first commit"`
-6.  `git push`
+6.  `git add .`
+7.  `git commit -m "first commit"`
+8.  `git push`
 
 ## Acknowledgements <a name="ack"></a>
 
