@@ -14,14 +14,15 @@
 4. [Modelling](#modelling)
 5. [Results](#results)
 6. [Deploy a Gradio demo to HuggingFace Spaces](#gradio_demo)
+7. [Acknowledgements](#Acknowledgements)
 
 ## Project Overview <a name="overview"></a>
 
 The aim of this project is to classify artworks using the [artbench](https://github.com/liaopeiyuan/artbench) dataset. The dataset includes 60,000 images of artworks from 10 different artistic styles, including paintings, murals, and sculptures from the 14th to the 21st century. Each style has 5,000 training images and 1,000 test images.
 
-I used PyTorch to build convolutional and transformer-based models, namely the [EfficientNet_B2](https://pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_b2.html#torchvision.models.efficientnet_b2)-B2 and [ViT_B16](https://pytorch.org/vision/stable/models/generated/torchvision.models.vit_b_16.html?highlight=vit#torchvision.models.vit_b_16) models.
+I used PyTorch to create convolutional and transformer-based models. Specifically, I leveraged and fine-tunde the pre-trained [EfficientNet_B2](https://pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_b2.html#torchvision.models.efficientnet_b2)-B2 and [ViT_B16](https://pytorch.org/vision/stable/models/generated/torchvision.models.vit_b_16.html?highlight=vit#torchvision.models.vit_b_16) models.
 
-To speed up model training, I used two Kaggle GPU T4 accelerators. Another alternative might be Google Colab.
+To speed up model training, I used two free Kaggle GPU T4 accelerators.
 
 I also created a [Gradio](https://www.gradio.app/) demo and deployed the app to [HuggingFace Spaces](https://huggingface.co/spaces).
 
@@ -72,13 +73,17 @@ To deploy the [Gradio](https://www.gradio.app/) demo to [HuggingFace Spaces](htt
 
 1.  Create a new space (ie. code repository). Space name = [SPACE_NAME].
 2.  Select Gradio as the Space SDK and CPU basic (free) as Space hardware.
-3.  Clone the repo locally: `git clone https://huggingface.co/spaces/[USERNAME]/[SPACE_NAME]`
-4.  Copy the contents of `gradio_demo` folder to the clonded repo folder.
-5.  Passwords are no longer accepted as a way to authenticate command-line Git operations. You need to use a personal access token as explained
-    [here](https://huggingface.co/blog/password-git-deprecation).
 
-        `git remote set-url origin https://[USERNAME]:[TOKEN]@huggingface.co/spaces/[USERNAME]/[SPACE_NAME]`
+Then, follow the standard git workflow:
 
-6.  `git add .`
-7.  `git commit -m "first commit"`
-8.  `git push`
+3.  Clone the repo locally: `git clone https://huggingface.co/spaces/[USERNAME]/[SPACE_NAME]` 4. Copy the contents of `gradio_demo` folder to the `clonded repo` folder. 5. Passwords are no longer accepted as a way to authenticate command-line Git operations. You need to use a personal access token as explained [here](https://huggingface.co/blog/password-git-deprecation).
+
+            `git remote set-url origin https://[USERNAME]:[TOKEN]@huggingface.co/spaces/[USERNAME]/[SPACE_NAME]`
+
+4.  `git add .`
+5.  `git commit -m "first commit"`
+6.  `git push`
+
+## Acknowledgements <a name="Acknowledgements"></a>
+
+Credit must be given to the authors of the [artbench](https://github.com/liaopeiyuan/artbench) dataset.
