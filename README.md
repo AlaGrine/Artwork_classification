@@ -22,7 +22,7 @@ The aim of this project is to classify artworks using the [artbench](https://git
 
 I used PyTorch to create convolutional and transformer-based models. Specifically, I leveraged and fine-tunde the pre-trained [EfficientNet_B2](https://pytorch.org/vision/stable/models/generated/torchvision.models.efficientnet_b2.html#torchvision.models.efficientnet_b2)-B2 and [ViT_B16](https://pytorch.org/vision/stable/models/generated/torchvision.models.vit_b_16.html?highlight=vit#torchvision.models.vit_b_16) models.
 
-I replicated the [ViT paper](https://arxiv.org/abs/2010.11929) to enhance comprehension of the Transformer architecture.
+I replicated the [ViT paper](https://arxiv.org/abs/2010.11929) and built the ViT model from scratch to enhance comprehension of the Transformer architecture.
 
 To speed up model training, I used two free Kaggle GPU T4 accelerators.
 
